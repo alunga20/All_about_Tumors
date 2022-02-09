@@ -12,11 +12,11 @@
   
   Installs all packages
   
-  `$ conda env export > assignment.yml`
+  `$ conda env export > envname.yml`
   
   Exports the environment
 
-  `$  conda env create -f assignment.yml`
+  `$  conda env create -f envname.yml`
 
   Imports the environment
   
