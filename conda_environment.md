@@ -15,5 +15,9 @@
   `$ conda env export > assignment.yml`
   
   Exports the environment
+
+  `$  conda env create -f assignment.yml`
+
+  Imports the environment
   
  
