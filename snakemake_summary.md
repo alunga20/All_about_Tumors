@@ -25,7 +25,7 @@ _Scalability_
 
 Workflows scale seamlessly from single to multicore, clusters or the cloud, without modification of the workflow definition and automatic avoidance of redundant computations.
 
-# How do you Get Snakemake
+# Consider...
 
 Some Bioinformatic tools, 20% of them, are impossible to install due to the large amount of data and software dependancies it contains and requires to be installed.
 Thus, we employ the use of Package managers for easy in Portability and execution of the software.
