@@ -56,6 +56,30 @@ Explore the code below that creates a conda environment to house your softwares,
   `$  conda env create -f environment.yml`
 
   Imports the environment
+  
+   # Working with snakemake
+ 1. In your current directory, Start by creating an empty workflow
+    ```
+    touch Snakefile
+    snakemake -n
+    ```
+ 2. Create a rule following the snakemake syntax e.g: map sequences to a reference genome.
+    ```
+    rule map_reads:
+      input:
+          "data/genome.fasta",
+          "data/samples/A.fastq"
+      output:
+          "results/mapped/A.bam"
+      conda:
+          "envs/mapping.yaml"
+      shell:
+          "bwa mem {input} | samtools view -b - > {output}"
+    ```
+ 3. Run
+    ```
+    snakemake --use-conda results/mapped/A.bam --cores 1
+    ```
 
 
 # Strengths of Snakemake:
