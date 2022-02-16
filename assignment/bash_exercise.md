@@ -21,7 +21,7 @@ The script then saves this information to a logfile.
 Which command would you use in order to create an empty file in the current directory, let's say empty.txt?
 
 ```bash
-touch empty_file.txt
+touch empty.txt
 ```
 
 ### Question 4
@@ -43,7 +43,7 @@ mv seqs.txt sequences.fasta
 How can you create in a single command a file containing the contents "Hello, world!" and named universal_greeting.txt?
 
 ```bash
-echo "Hello, world!" > universal_greetings.txt
+echo "Hello, world!" > universal_greeting.txt
 ```
 
 ### Question 7
@@ -52,7 +52,7 @@ What about creating the same file but with filename "universal greeting.txt" (th
 ```bash
 echo "Hello world!" > "universal greeting.txt" 
 ```
-creates a file named '_universal greetings.txt_'
+creates a file named '_universal greeting.txt_'
 
 ### Question 8
 How can you use the commandline (on whichever machine you are now, that is connected to the internet) to download directly the 
@@ -72,7 +72,7 @@ wc -l test.fa.1
 10281 lines
 
 ```bash
-grep -c ">" test.fa 
+grep -c ">" test.fa.1
 ```
 100 sequences
 
@@ -80,7 +80,7 @@ grep -c ">" test.fa
 Extract only the identifier lines from this file, and write them into a file called "identifiers.txt".
 
 ```bash
-grep -E ">" test.fa > identifiers.txt
+grep -E ">" test.fa.1 > identifiers.txt
 ```
 
 ### Question 11
@@ -102,7 +102,7 @@ grep ">" test.fa.1
 Can you write a very short script (possibly one single commandline) to extract from the same file the species names?
 
 ```bash
-grep ">" test.fa | sed "s/PREDICTED: //g" | cut -f 2-3 -d " "
+grep ">" test.fa.1 | sed "s/PREDICTED: //g" | cut -f 2-3 -d " "
 ```
 
 ### Question 14
@@ -110,7 +110,7 @@ Once this is done, how do you count the species names with their order of multip
 (i.e. how many sequences belong to Mus musculus, how many to Homo sapiens, etc)?
 
 ```bash
-grep ">" test.fa | sed "s/PREDICTED: //g" | cut -f 2-3 -d " " | sort | uniq -c 
+grep ">" test.fa.1 | sed "s/PREDICTED: //g" | cut -f 2-3 -d " " | sort | uniq -c 
 ```
 
       3 Heterocephalus glaber
