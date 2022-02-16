@@ -159,7 +159,7 @@ dividing by zero will result into an infinity that can not be expressed by a com
 ### Question 18
 How can you separately redirect the standard output and the standard error streams into two separate files?
 
-``bash
+```bash
 command > stdout.txt 2> stderr.txt
 ```
 
@@ -174,6 +174,27 @@ For instance, the message written by your program would be:
 Good day Emmanuel! It's not 12:57EAT on this lovely day of July 20. 1:00
 or 'Good morning" in the morning hours, or "Good evening" in the evening hours, depending on the current time.
 Of course there will be at least an if or a case construct in your script.
+```
+
+```bash
+#!/bin/bash 
+echo -n "What's your name? "
+read name 
+hour=`date +%H` 
+current_time=`date "+%H:%M%Z"` 
+current_day=`date "+%B %d"` 
+
+if [[ $hour -lt 12 ]]
+then 
+    period="morning"
+elif [[ $hour -lt 18 ]]
+then 
+    period="afternoon"
+else 
+    period="evening"
+fi 
+
+echo "Good $period $name! It is now $current_time on this lovely day of $current_day."
 ```
 
 ### Question 20
