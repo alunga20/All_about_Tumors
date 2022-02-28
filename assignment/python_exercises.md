@@ -66,8 +66,8 @@ for x in sentence:
         l=l+1
     else:
         pass
-print("Letters", l)
-print("Digits", d)
+print("LETTERS", l)
+print("DIGITS", d)
 ```
 
 ### Question 15
