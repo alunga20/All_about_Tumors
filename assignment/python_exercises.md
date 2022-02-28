@@ -13,7 +13,7 @@ In case of input data being supplied to the question, it should be assumed to be
 Consider use dict()
 
 ```python
-n= int(input("Type a number: "))
+n= int(input("input a no: "))
 d= {}
 
 for i in range(1, n+1):
