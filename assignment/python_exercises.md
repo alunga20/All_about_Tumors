@@ -12,6 +12,15 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 Consider use dict()
 
+```python
+n= int(input("Type a number: "))
+d= {}
+
+for i in range(1, n+1):
+    d[i] = i*i
+    
+print(d)
+```
 
 ### Question 8
 Level 2
