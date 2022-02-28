@@ -35,6 +35,12 @@ bag,hello,without,world
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+```python
+words = input("word sequence: ")
+splited_words = words.split(",")
+splited_words.sort()
+print((',').join(splited_words))
+```
 
 ### Question 13
 Level 2
