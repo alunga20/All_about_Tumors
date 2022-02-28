@@ -83,6 +83,15 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+```python
+n=input('enter a num:')
+output=0
+for i in range(1,5):
+    a=n*i
+    new=int(a)
+    output=output+new
+print(output)
+```
 
 ### Question 25
 Level 1
