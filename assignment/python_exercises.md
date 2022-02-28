@@ -56,6 +56,19 @@ DIGITS 3
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+```python
+sentence = input("Input a sentence: ")
+d=l=0
+for x in sentence:
+    if x.isdigit():
+        d=d+1
+    elif x.isalpha():
+        l=l+1
+    else:
+        pass
+print("Letters", l)
+print("Digits", d)
+```
 
 ### Question 15
 Level 2
