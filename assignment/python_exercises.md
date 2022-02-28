@@ -57,7 +57,7 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 ```python
-sentence = input("Input a sentence: ")
+sentence = input("Write a sentence: ")
 d=l=0
 for x in sentence:
     if x.isdigit():
