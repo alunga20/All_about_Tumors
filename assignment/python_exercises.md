@@ -111,6 +111,11 @@ Hints:
 
 Use str() to convert a number to string.
 
+```python
+hour = 11
+statement = 'This is the ' + str(hour) + 'th hour of the day.'
+print(statement)
+```
 
 ### Question 38
 Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the first 5 elements in the list.
