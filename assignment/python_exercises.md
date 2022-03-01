@@ -144,6 +144,11 @@ Hints:
 Use "for" to iterate the tuple
 Use tuple() to generate a tuple from a list.
 
+```python
+tpl = (1,2,3,4,5,6,7,8,9,10)
+tpl1 = tuple(i for i in tpl if i%2 == 0)
+print(tpl1)
+```
 
 ### Question 44
 Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
