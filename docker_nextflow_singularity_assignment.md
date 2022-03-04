@@ -1,5 +1,5 @@
 ---
-# Singularity Containers.
+# 1.Singularity Containers.
 
 * Containers - help with reproducibility and dependancies required to run a script, program or pipeline.
 
@@ -100,7 +100,7 @@ export PATH=$SPACK_ROOT/isugif/snpphylo/bin:$PATH
 *  Once you have made all the changes and your image is working the way you want then you can make those changes in your original recipe file and recreate it from scratch for full reproducibility. 
   
   
-# Running Nextflow on GitHub.
+# 2.Running Nextflow on GitHub.
   
 * Nextflow seamlessly integrates with GitHub, and GitLab hosted code repositories and sharing platforms.
 * This feature allows you to manage your project code in a more consistent manner or use other people’s Nextflow pipelines, published through them.
@@ -147,7 +147,7 @@ nextflow clone nextflow-io/hello target-dir
   nextflow drop nextflow-io/hello
 ```  
   
-# Docker Hub
+# 3.Docker Hub
   
 * Docker Hub is a service provided by Docker for finding and sharing container images with your team. 
   
